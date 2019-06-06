@@ -26,6 +26,8 @@
         <script>
             $.get("https://docs.google.com/document/d/e/2PACX-1vRk7KH1QtzRpQVIPAq2Phw-_Go3WwQkyg6YEzkdM0aKYsB8zyAxaRJojTu6OZnYlqPm_MnycwD4lkvP/pub", function(response){
                 $("#content").html(response);
+                $("#content #footer").remove();
+                $("#content #header").remove();
             });
         </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
